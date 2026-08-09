@@ -16,10 +16,10 @@ console.log("");
 
 let transactions = [
     "Deposit    +10,000 CZK",
-    "Withdrawal -2,000 CZK",
-    "Deposit    +5,000 CZK",
-    "Withdrawal -1,500 CZK",
-    "Deposit    +3,000 CZK"
+    "Withdrawal -2,000  CZK",
+    "Deposit    +5,000  CZK",
+    "Withdrawal -1,500  CZK",
+    "Deposit    +3,000  CZK"
 ];
 
 // LOOP
