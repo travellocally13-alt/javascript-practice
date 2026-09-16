@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color:#f4f4f4;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#employee-list p {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#employee-list span {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}

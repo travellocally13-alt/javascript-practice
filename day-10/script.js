@@ -16,7 +16,10 @@ console.log(updatedEmployees);
 const employeeListElement = document.getElementById("employee-list");
 
 updatedEmployees.forEach(employee => {
-    employeeListElement.innerHTML += `<p>${employee.name} : ${employee.salary} CZK</p>`;
+    employeeListElement.innerHTML += `<p>
+    <strong>${employee.name}</strong> 
+    <span>${employee.salary.toLocaleString()} CZK</span>
+    </p>`;
 });
 
 
