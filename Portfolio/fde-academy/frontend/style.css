@@ -1,0 +1,282 @@
+
+/* Basic reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website foundation */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1020;
+    color: #f5f7ff;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    border-bottom: 1px solid #26304a;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #8b9cff;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #c5cbe0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8b9cff;
+}
+
+/* Main sections */
+
+section {
+    padding: 80px 8%;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(
+        135deg,
+        #111a35,
+        #0b1020
+    );
+}
+
+.eyebrow {
+    color: #8b9cff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h2 {
+    font-size: 52px;
+    max-width: 800px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #c5cbe0;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #7588ff;
+    color: #ffffff;
+    border: none;
+    padding: 15px 26px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e70e8;
+}
+
+/* Section headings */
+
+section h2 {
+    font-size: 34px;
+    margin-bottom: 22px;
+}
+
+section p {
+    color: #c5cbe0;
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+
+/* AI mentor list */
+
+ul {
+    padding-left: 24px;
+    color: #c5cbe0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Learning cards */
+
+.learning-card {
+    background-color: #151e36;
+    border: 1px solid #293553;
+    border-radius: 12px;
+    padding: 26px;
+    margin-top: 20px;
+    max-width: 850px;
+    transition: transform 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-4px);
+}
+
+.learning-card h3 {
+    color: #8b9cff;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #26304a;
+    color: #929bb5;
+}
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* AI Mentor Interface */
+
+.mentor-card {
+    max-width: 850px;
+    background-color: #151e36;
+    border: 1px solid #293553;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.mentor-header {
+    padding: 20px;
+    border-bottom: 1px solid #293553;
+}
+
+.mentor-header h3 {
+    color: #8b9cff;
+    margin-bottom: 5px;
+}
+
+.mentor-status {
+    font-size: 13px;
+    color: #929bb5;
+}
+
+.chat-messages {
+    padding: 24px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.message {
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 85%;
+    white-space: pre-wrap;
+}
+
+.mentor-message {
+    background-color: #253252;
+    color: #f5f7ff;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #566bd7;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-input {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    border-top: 1px solid #293553;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #394666;
+    background-color: #0b1020;
+    color: white;
+    font-size: 15px;
+}
+
+.chat-input input:focus {
+    outline: 2px solid #7588ff;
+}
+
+@media (max-width: 600px) {
+    .chat-input {
+        flex-direction: column;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+}
