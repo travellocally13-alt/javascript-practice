@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python and Automation | FDE Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>FDE Academy</h2>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Python and Automation</h1>
+            <p>
+                Welcome to your first Python learning path.
+                Learn programming step by step and build practical solutions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Lesson 1: Your First Python Program</h2>
+
+            <p>
+                Python is a programming language used to build applications,
+                automate tasks, work with data, and connect AI tools.
+            </p>
+
+            <h3>Your first line of Python</h3>
+
+            <pre><code>print("Hello, FDE Academy!")</code></pre>
+
+            <p>
+                The <strong>print()</strong> function displays a message
+                on the screen.
+            </p>
+        </section>
+
+        
+<section>
+    <h2>Practice Exercise 1: Display Your Name</h2>
+
+    <p>
+        In Python, the <strong>print()</strong> function displays
+        information on the screen.
+    </p>
+
+    <p><strong>Your task:</strong> Write a Python command that displays your name.</p>
+
+    <p>Example: <code>print("Alex")</code></p>
+
+    <label for="python-answer">Write your Python command:</label>
+
+    <input
+        type="text"
+        id="python-answer"
+        placeholder='Example: print("Alex")'
+    >
+
+    <button type="button" id="check-answer">
+        Check My Answer
+    </button>
+
+    <p id="exercise-feedback" aria-live="polite"></p>
+</section>
+
+    </main>
+
+<script>
+    const checkButton = document.getElementById("check-answer");
+    const answerInput = document.getElementById("python-answer");
+    const feedback = document.getElementById("exercise-feedback");
+
+    checkButton.addEventListener("click", function () {
+        const answer = answerInput.value.trim();
+
+        const correctAnswer = /^print\s*\(\s*(["'])(.+?)\1\s*\)$/.test(answer);
+
+        if (correctAnswer) {
+            feedback.textContent =
+                "Correct! Great job. Your Python command would display your name.";
+            feedback.style.color = "green";
+        } else {
+            feedback.textContent =
+                'Not quite! Hint: Use print("Your Name"). Check your brackets and quotation marks.';
+            feedback.style.color = "red";
+        }
+    });
+</script>
+
+</body>
+</html>
